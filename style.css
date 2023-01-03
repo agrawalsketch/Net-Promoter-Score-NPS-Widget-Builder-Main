@@ -1,0 +1,149 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
+p {
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget {
+  display: flex;
+  margin: 0 auto;
+}
+
+.widget button {
+  font-size: 16px;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: inline-block;
+  background: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 100%;
+  margin: 0;
+  outline: none;
+  margin-left: -1px;
+  width: 40px;
+  margin-right: 0.5rem;
+  height: 40px;
+  background-color: #f7f7f7;
+  border: 3px solid #eee;
+  transform: scale(1);
+
+  transition: background 0.2s ease-in, color 0.2s ease-in,
+    border-color 0.2s ease-in, transform 0.2s cubic-bezier(0.5, 2, 0.5, 0.75);
+}
+
+#textarea {
+  width: 90%;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 528px) {
+  .widget button {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .widget button {
+    font-size: 16px;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.05rem;
+  }
+  img {
+    width: 80px;
+  }
+}
+
+button.detractor:hover {
+  background: #f44336;
+  color: white;
+  border-color: lighten(#f44336, 5%);
+  transform: scale(1.05);
+}
+
+button.passive:hover {
+  background: #f57c00;
+  color: white;
+  border-color: lighten(#f57c00, 5%);
+  transform: scale(1.05);
+}
+
+button.promoter:hover {
+  background: #4caf50;
+  color: white;
+  border-color: lighten(#4caf50, 5%);
+  transform: scale(1.05);
+}
+
+button.detractor-hover {
+  background: #f44336;
+  color: white;
+  border-color: lighten(#f44336, 5%);
+  transform: scale(1.05);
+}
+
+button.passive-hover {
+  background: #f57c00;
+  color: white;
+  border-color: lighten(#f57c00, 5%);
+  transform: scale(1.05);
+}
+
+button.promoter-hover {
+  background: #4caf50;
+  color: white;
+  border-color: lighten(#4caf50, 5%);
+  transform: scale(1.05);
+}
+
+#send-nps {
+  background-color: rgb(46, 49, 146);
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+#send-nps:hover,
+#send-nps:active {
+  transition: all 0.3s;
+  background-color: rgb(46, 49, 146);
+  color: white;
+}

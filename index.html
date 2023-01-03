@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NPS</title>
+  </head>
+
+  <body>
+    <img src="/src/logo.jpg" alt="Logo" />
+    <div class="container">
+      <h1>Please share your feedback</h1>
+      <p>
+        On a scale of 1 to 10, how much would you recommend our website to
+        somebody?
+      </p>
+
+      <div class="widget">
+        <button class="detractor">1</button>
+        <button class="detractor">2</button>
+        <button class="detractor">3</button>
+        <button class="detractor">4</button>
+        <button class="detractor">5</button>
+        <button class="passive">6</button>
+        <button class="passive">7</button>
+        <button class="passive">8</button>
+        <button class="promoter">9</button>
+        <button class="promoter">10</button>
+      </div>
+
+      <p class="mt-5">How can we improve?</p>
+
+      <!-- <textarea name="textarea" id="textarea" cols="100%" rows="5"></textarea> -->
+      <form
+        action="https://script.google.com/macros/s/AKfycbyuAde8O-RU-MbXc7tl0rwhmalNSNr1LleK3OA7NGNxgfuczUOrW6WeuDewGMHAOI_d9A/exec"
+        method="post"
+      >
+        <input type="text" name="opinion" id="textarea" />
+      </form>
+      <div id="send-nps">SUBMIT</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
